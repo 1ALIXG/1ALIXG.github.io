@@ -42,7 +42,6 @@
 <script>
   setTimeout(() => {
     const words = [
-      'اضغطي على ابدأ ثلاث مرات',
       '!!اضغطي على ابدأ اكثر من مره بسرعة',
       'اذا ضغطتي على ابدأ ثلاث مرات بتفوزي',
     ];
@@ -67,7 +66,7 @@
     document.getElementById('randomWord').style.fontSize = "20px";
     document.getElementById('randomWord').style.fontFamily = "Arial";
     document.getElementById('randomWord').style.fontWeight = "bold";
-  }, 40000);
+  }, 45000);
 </script>
 <div id="randomWord"></div>
 
@@ -83,7 +82,7 @@
     document.getElementById('randomWord').style.fontSize = "20px";
     document.getElementById('randomWord').style.fontFamily = "Arial";
     document.getElementById('randomWord').style.fontWeight = "bold";
-  }, 45000);
+  }, 55000);
 </script>
 <div id="randomWord"></div>
 
@@ -100,7 +99,7 @@
     document.getElementById('randomWord').style.fontSize = "20px";
     document.getElementById('randomWord').style.fontFamily = "Arial";
     document.getElementById('randomWord').style.fontWeight = "bold";
-  }, 50000);
+  }, 60000);
 </script>
 <div id="randomWord"></div>
 
@@ -117,8 +116,8 @@
     document.getElementById('randomWord').style.fontWeight = "bold";
     setTimeout(function(){
       document.getElementById('randomWord').remove();
-    }, 5000);
-  }, 55000);
+    }, 7000);
+  }, 67000);
 </script>
 <div id="randomWord"></div>
     <script>
@@ -126,8 +125,8 @@
       let ctx;
       let x = 475;
       let y = 360;
-      let dx = 3;
-      let dy = 7;
+      let dx = 2;
+      let dy = 6;
       let PADDLE_WIDTH = 100;
       let PADDLE_HEIGHT = 10;
       let paddleX = 500;
@@ -257,13 +256,13 @@
           } else {
             lives--;
             if (!lives) {
-              var alerts = ["2GB 🫣","الكود الثاني: 6T8DS4G8LR55 🫴🏻","سمبوسة جبن 🫵🏻","bit.ly/haru_gift","الكود الأول: GB9UB9PXSSTZ 🫴🏻","2GB 🫵🏻","جمعة مباركة x ∞ 🤍✨", "كل عام وانتِ بخير، آنسة هارو"];
+              var alerts = ["Ezz 🫣","مستوى مستوى🤨","ترا سهلة 🫠","نووبه🦦","2GB 🫣","الكود الثاني: 6T8DS4G8LR55 🫴🏻","يو آر سمبوسة جبن🫵🏻🏻","https://bit.ly/haru_gift","الكود الأول: GB9UB9PXSSTZ 🫴🏻","2GB 🫵🏻","جمعة مباركة x ∞ 🤍✨", "كل عام وانتِ بخير، آنسة هارو"];
               alert(alerts[Math.floor(Math.random() * alerts.length)]);
               document.location.reload();
             } else {
               x = canvas.width / 2;
               y = canvas.height - 30;
-              dx = 10;
+              dx = 9;
               dy = -10;
               paddleX = (canvas.width - PADDLE_WIDTH) / 2;
             }
@@ -295,7 +294,7 @@
                 b.status = 0;
                 score++;
                 if (score == brickRowCount * brickColumnCount) {
-                  var alerts = ["مبروك 🫡 Email: 1haru.32100@gmail.com", "آخيرًا، مبروك امسكي 🫡 Password: Kawaiichan73!"];
+                  var alerts = ["مبروك 🫡 Email: 1haru.32100@gmail.com", "آخيرًا، مبروك امسكي 🫡 Password: Kawaiichan73"];
                   alert(alerts[Math.floor(Math.random() * alerts.length)]);
                   document.location.reload();
                 }
