@@ -39,95 +39,14 @@
   }
 </style>
     <canvas id="gameCanvas" width="1150" height="600"></canvas>
-<script>
-  setTimeout(() => {
-    const words = [
-      '!!اضغطي على ابدأ اكثر من مره بسرعة',
-      'اذا ضغطتي على ابدأ ثلاث مرات بتفوزي',
-    ];
-    let randomWord = words[Math.floor(Math.random() * words.length)];
-    document.getElementById('randomWord').innerHTML = randomWord;
-    document.getElementById('randomWord').style.color = "red";
-    document.getElementById('randomWord').style.fontSize = "20px";
-    document.getElementById('randomWord').style.fontFamily = "Arial";
-    document.getElementById('randomWord').style.fontWeight = "bold";
-  }, 30000);
-</script>
-<div id="randomWord"></div>
-
-<script>
-  setTimeout(() => {
-    const words = [
-      '👍🏻 لايُلدغ المسلم مرتين',
-    ];
-    let randomWord = words[Math.floor(Math.random() * words.length)];
-    document.getElementById('randomWord').innerHTML = randomWord;
-    document.getElementById('randomWord').style.color = "black";
-    document.getElementById('randomWord').style.fontSize = "20px";
-    document.getElementById('randomWord').style.fontFamily = "Arial";
-    document.getElementById('randomWord').style.fontWeight = "bold";
-  }, 45000);
-</script>
-<div id="randomWord"></div>
-
-<script>
-  setTimeout(() => {
-    const words = [
-      'او يمكن يُلدغ مدري',
-      'هالمره جربي اضغطي يمكن تفوزي صدق',
-    ];
-    let randomWord = words[Math.floor(Math.random() * words.length)];
-    document.getElementById('randomWord').innerHTML = randomWord;
-    document.getElementById('randomWord').style.color = "red";
-    document.getElementById('randomWord').style.fontSize = "20px";
-    document.getElementById('randomWord').style.fontFamily = "Arial";
-    document.getElementById('randomWord').style.fontWeight = "bold";
-  }, 55000);
-</script>
-<div id="randomWord"></div>
-
-<script>
-  setTimeout(() => {
-    const words = [
-      '🧍🏻 خلاص ركزي مابتكلم',
-      '🫡 اوكي خلاص ركزي',
-      '🧍🏻 اوكي بسكت آسف',
-    ];
-    let randomWord = words[Math.floor(Math.random() * words.length)];
-    document.getElementById('randomWord').innerHTML = randomWord;
-    document.getElementById('randomWord').style.color = "black";
-    document.getElementById('randomWord').style.fontSize = "20px";
-    document.getElementById('randomWord').style.fontFamily = "Arial";
-    document.getElementById('randomWord').style.fontWeight = "bold";
-  }, 60000);
-</script>
-<div id="randomWord"></div>
-
-<script>
-  setTimeout(() => {
-    const words = [
-      ' 🫥🫥 و صح كل مره بتطلع لك هذي السلسلة من الكلمات ماقدر اشيلهم',
-    ];
-    let randomWord = words[Math.floor(Math.random() * words.length)];
-    document.getElementById('randomWord').innerHTML = randomWord;
-    document.getElementById('randomWord').style.color = "black";
-    document.getElementById('randomWord').style.fontSize = "20px";
-    document.getElementById('randomWord').style.fontFamily = "Arial";
-    document.getElementById('randomWord').style.fontWeight = "bold";
-    setTimeout(function(){
-      document.getElementById('randomWord').remove();
-    }, 7000);
-  }, 67000);
-</script>
-<div id="randomWord"></div>
     <script>
       let canvas;
       let ctx;
       let x = 475;
       let y = 360;
-      let dx = 3;
-      let dy = 6;
-      let PADDLE_WIDTH = 100;
+      let dx = 4;
+      let dy = 8;
+      let PADDLE_WIDTH = 150;
       let PADDLE_HEIGHT = 10;
       let paddleX = 500;
       let rightPressed = false;
@@ -262,8 +181,8 @@
             } else {
               x = canvas.width / 2;
               y = canvas.height - 30;
-              dx = 9;
-              dy = -10;
+              dx = 8;
+              dy = -9;
               paddleX = (canvas.width - PADDLE_WIDTH) / 2;
             }
           }
